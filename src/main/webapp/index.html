@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple calculator</title>
+	shruti
+  </head>
+<body>
+Enter the 1st number:<input type="number" id="num1" required autofocus>
+Enter the 2nd number:<input type="number" id="num2" required>
+<input type="button" value="Add" onclick="add();" id="btn">
+<input type="button" value="sub" onclick="sub();" id="btn">
+<input type="button" value="mul" onclick="mul();" id="btn">
+<input type="button" value="div" onclick="div();" id="btn">
+<div id="Result">
+</div>
+  <script> 
+  function add()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var sum=+n1 + +n2;
+      alert("sum is "+ sum);
+      document.getElementById("Result").innerText=sum;
+    }
+    function sub()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var sum=+n1 - +n2;
+      alert("diff is "+ sum);
+      document.getElementById("Result").innerText=sum;
+    }
+    function mul()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var sum=+n1 * +n2;
+      alert("pro is "+ sum);
+      document.getElementById("Result").innerText=sum;
+    }
+    function div()
+    {
+      var n1=document.getElementById("num1").value;
+      var n2=document.getElementById("num2").value;
+      var sum=+n1 / +n2;
+      alert("rem is "+ sum);
+      document.getElementById("Result").innerText=sum;
+    }
+  </script>
+</body>
+</html>
